@@ -1,0 +1,41 @@
+body {
+  background-color: lightgray;
+}
+
+#container {
+  background-color: lightblue;
+}
+
+aside {
+  background-color: lightyellow;
+}
+
+main {
+  background-color: lightcoral;
+}
+
+main>header {
+  background-color: lightpink;
+}
+
+#content {
+  background-color: lightskyblue;
+}
+
+#content>header {
+  background-color: lightslategrey;
+}
+
+#content>div.scrolledsmall {
+  background-color: lightsalmon;
+}
+
+#bevat article
+{
+    background-color: lightgoldenrodyellow;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+  background-color: lightgreen;
+}
