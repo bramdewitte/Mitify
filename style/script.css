@@ -1,20 +1,66 @@
+:root {
+  --main-accent-color: #1ed760;
+  --main-lightdark-color: #d8d8d8;
+  --main-lightpure-color: #ffffff;
+  --main-darklight-color: #3d3d3d;
+  --main-dark-color: #2c2c2c;
+  --main-darkdarker-color: #202020;
+}
+
 body {
   background-color: lightgray;
+  font-family: "Montserrat", sans-serif;
 }
 
 #container {
   background-color: lightblue;
 }
 
+/* ------------------------------------ ASIDE NAV ------------------------------------ */
+
 aside {
-  background-color: lightyellow;
+  background-color: var(--main-darkdarker-color);
+  color: var(--main-lightdark-color);
+  padding-top: 1rem;
+}
+
+aside h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+
+aside li {
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+aside li > a {
+  color: var(--main-lightdark-color);
+  display: block;
+}
+
+aside li > a:hover {
+  color: var(--main-lightpure-color);
+  text-decoration: none;
+}
+
+aside li.active {
+  border-left: var(--main-accent-color) 0.3rem solid;
+  left: -1rem;
+  padding-left: 0.7rem;
+}
+
+aside li.active a {
+  color: var(--main-lightpure-color);
 }
 
 main {
   background-color: lightcoral;
 }
 
-main>header {
+main > header {
   background-color: lightpink;
 }
 
@@ -22,18 +68,16 @@ main>header {
   background-color: lightskyblue;
 }
 
-#content>header {
+#content > header {
   background-color: lightslategrey;
 }
 
-#content>div.scrolledsmall {
+#content > div.scrolledsmall {
   background-color: lightsalmon;
 }
 
-#bevat article
-{
-    background-color: lightgoldenrodyellow;
-    font-family: 'Montserrat', sans-serif;
+#bevat article {
+  background-color: lightgoldenrodyellow;
 }
 
 footer {
