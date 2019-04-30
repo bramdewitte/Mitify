@@ -14,10 +14,21 @@
   border-radius: 1.25rem;
 }
 
+.btn:hover {
+  color: var(--main-lightdark-color);
+}
+
 .btn.solid {
   background-color: var(--main-accent-color);
   color: var(--main-lightdark-color);
   border: none;
+  box-shadow: none;
+}
+
+.btn.solid:hover {
+  color: var(--main-lightdark-color);
+  border: solid var(--main-lightdark-color) thin;
+  background-color: var(--main-dark-color);
 }
 
 .btn.more {
@@ -134,7 +145,7 @@ main > header a:hover {
 
 #content > div.scrolledsmall {
   background-color: var(--main-dark-color);
-  display: none;
+  /*display: none;*/
 }
 
 #content > div.scrolledsmall > div.row > div {
