@@ -36,16 +36,6 @@ aside li {
   position: relative;
 }
 
-aside li > a {
-  color: var(--main-lightdark-color);
-  display: block;
-}
-
-aside li > a:hover {
-  color: var(--main-lightpure-color);
-  text-decoration: none;
-}
-
 aside li.active {
   border-left: var(--main-accent-color) 0.3rem solid;
   left: -1rem;
@@ -54,6 +44,16 @@ aside li.active {
 
 aside li.active a {
   color: var(--main-lightpure-color);
+}
+
+aside li > a {
+  color: var(--main-lightdark-color);
+  display: block;
+}
+
+aside li > a:hover {
+  color: var(--main-lightpure-color);
+  text-decoration: none;
 }
 
 main {
