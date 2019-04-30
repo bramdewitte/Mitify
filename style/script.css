@@ -7,6 +7,31 @@
   --main-darkdarker-color: #202020;
 }
 
+.btn {
+  border: solid thin var(--main-lightdark-color);
+  color: var(--main-accent-color);
+  height: 2.5rem;
+  border-radius: 1.25rem;
+}
+
+.btn.solid {
+  background-color: var(--main-accent-color);
+  color: var(--main-lightdark-color);
+  border: none;
+}
+
+.btn.more {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: var(--main-lightdark-color);
+}
+
+.btn.focus {
+  box-shadow: none;
+}
+
 body {
   background-color: lightgray;
   font-family: "Montserrat", sans-serif;
@@ -66,7 +91,11 @@ main {
 
 main > header {
   background-color: var(--main-dark-color);
-  background: linear-gradient(to bottom, rgba(122,122,122,1) 0%,rgba(44,44,44,1) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(122, 122, 122, 1) 0%,
+    rgba(44, 44, 44, 1) 100%
+  );
   color: var(--main-lightdark-color);
   height: 50px;
 }
@@ -91,6 +120,8 @@ main > header a:hover {
   color: var(--main-lightpure-color);
 }
 
+/* ------------------------------------ EINDE MAIN HEADER ------------------------------------ */
+
 #content {
   background-color: lightskyblue;
 }
@@ -99,8 +130,20 @@ main > header a:hover {
   background-color: lightslategrey;
 }
 
+/* ------------------------------------ BEGIN SCROLL HEADER ------------------------------------ */
+
 #content > div.scrolledsmall {
-  background-color: lightsalmon;
+  background-color: var(--main-dark-color);
+  display: none;
+}
+
+#content > div.scrolledsmall > div.row > div {
+  margin: auto 0px auto 0px;
+}
+
+#content > div.scrolledsmall h1 {
+  color: var(--main-lightdark-color);
+  text-transform: capitalize;
 }
 
 #bevat article {
