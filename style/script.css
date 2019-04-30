@@ -16,7 +16,7 @@ body {
   background-color: lightblue;
 }
 
-/* ------------------------------------ ASIDE NAV ------------------------------------ */
+/* ------------------------------------ BEGIN ASIDE NAV ------------------------------------ */
 
 aside {
   background-color: var(--main-darkdarker-color);
@@ -56,12 +56,38 @@ aside li > a:hover {
   text-decoration: none;
 }
 
+/* ------------------------------------ END ASIDE NAV ------------------------------------ */
+
 main {
   background-color: lightcoral;
 }
 
+/* ------------------------------------ BEGIN MAIN HEADER ------------------------------------ */
+
 main > header {
-  background-color: lightpink;
+  background-color: var(--main-dark-color);
+  color: var(--main-lightdark-color);
+  height: 50px;
+}
+
+main > header > div {
+  margin: auto 0px auto 0px;
+}
+
+main > header img {
+  width: 2rem;
+}
+
+main > header form {
+  display: inline;
+}
+
+main > header a {
+  color: var(--main-lightdark-color);
+}
+
+main > header a:hover {
+  color: var(--main-lightpure-color);
 }
 
 #content {
