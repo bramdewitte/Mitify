@@ -227,8 +227,64 @@ main > header a:hover {
   vertical-align: middle;
 }
 
-/* ------------------------------------ BEGIN  ------------------------------------ */
+/* ------------------------------------ BEGIN FOOTER  ------------------------------------ */
 
 footer {
-  background-color: lightgreen;
+  background-color: var(--main-darkdarker-color);
+}
+
+#nav_ctrl {
+  color: var(--main-lightpure-color);
+}
+
+#nav_playing img {
+  padding: 1rem;
+}
+
+#nav_playing .songtitle {
+  color: var(--main-lightpure-color);
+}
+
+#nav_playing .artiest {
+  color: var(--main-lightdark-color);
+}
+
+/* ------------------------------------ BEGIN PLAYBAR  ------------------------------------ */
+
+.playbar {
+  width: 100%;
+  background-color: var(--main-darklight-color);
+  height: 4px;
+  border-radius: 2px;
+}
+
+.playbar > .currentposbar {
+  background-color: var(--main-accent-color);
+  opacity: 0.75;
+  height: 100%;
+  width: 40%;
+  border-radius: 2px;
+  transition: ease 0.1s;
+}
+
+.playbar > .currentpos {
+  height: 100%;
+  width: 4px;
+  background-color: var(--main-lightpure-color);
+  position: absolute;
+  top: 0px;
+  left: 40.3%;
+  border-radius: 2px;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  transition: ease 0.1s;
+}
+
+.playbar:hover > .currentpos {
+  visibility: visible;
+}
+
+.playbar:hover > .currentposbar {
+  background-color: var(--main-accent-color);
+  opacity: 1;
 }
