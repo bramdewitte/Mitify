@@ -134,18 +134,19 @@ main > header a:hover {
 /* ------------------------------------ EINDE MAIN HEADER ------------------------------------ */
 
 #content {
-  background-color: lightskyblue;
+  background-color: var(--main-dark-color);
 }
 
 #content > header {
-  background-color: lightslategrey;
+  background-color: var(--main-dark-color);
+  color: var(--main-lightdark-color);
 }
 
 /* ------------------------------------ BEGIN SCROLL HEADER ------------------------------------ */
 
 #content > div.scrolledsmall {
   background-color: var(--main-dark-color);
-  /*display: none;*/
+  display: none;
 }
 
 #content > div.scrolledsmall > div.row > div {
@@ -157,9 +158,76 @@ main > header a:hover {
   text-transform: capitalize;
 }
 
+/* ------------------------------------ BEGIN OVERZICHT VAN "COVERS" OF "MOODS" ------------------------------------ */
+
 #bevat article {
-  background-color: lightgoldenrodyellow;
+  background-color: var(--main-dark-color);
 }
+
+#bevat.catalogus {
+  padding-top: 1rem;
+}
+
+#bevat.catalogus article {
+  padding-bottom: 0.75rem;
+}
+
+#bevat.catalogus article header {
+  position: relative;
+}
+
+#bevat.catalogus article > div.infocard {
+  color: var(--main-lightpure-color);
+  font-size: 0.8rem;
+}
+
+#bevat.catalogus article > div.infocard > h1 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding-top: 0.5rem;
+}
+
+#bevat.catalogus article > div.infocard > footer {
+  background-color: var(--main-dark-color);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-top: 0.5rem;
+}
+
+#bevat.catalogus article .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: ease 0.5s;
+}
+
+#bevat.catalogus article .overlay:hover {
+  opacity: 1;
+}
+
+#bevat.catalogus article .overlay .ctrl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+#bevat.catalogus article .overlay .ctrl .fa-play {
+  font-size: 3.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#bevat.catalogus article .overlay .ctrl i {
+  vertical-align: middle;
+}
+
+/* ------------------------------------ BEGIN  ------------------------------------ */
 
 footer {
   background-color: lightgreen;
